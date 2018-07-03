@@ -66,6 +66,10 @@ regressor = fit_model(X_train, y_train)
 print "O parametro 'max_depth' otimizado " \
       "para o modelo e {}.\n".format(regressor.get_params()['max_depth'])
 
+# Parameters:
+# RM: número médio de quartos entre os imóveis na vizinhança.
+# LSTAT: porcentagem de proprietários na vizinhança considerados de “baixa renda”.
+# PTRATIO: razão de estudantes para professores nas escolas de ensino fundamental e médio na vizinhança.
 client_data = [[5, 17, 15], # Imovel 1
 			   [4, 32, 22], # Imovel 2
 			   [8, 3, 12]] # Imovel 3
